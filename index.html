@@ -1,0 +1,71 @@
+<!-- This website uses the Skeleton Frameword getskeleton.com für responsive Design -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Roman Numeral Converter</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Javascript 
+  ------------------------------------------------- -->
+  <script src="script/script.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="twelve colums" id="banner" >
+        <h3>Roman Numeral Converter</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="twelve colums" id="form">
+        <form>
+          <span id="num">Enter a number between 1 and 3.999 or</span>
+          <p id="rom"> a roman numeral using I, V, X, L, C, D or M</p>
+          <input type="text" id="number" name="number" onkeyup="validate();">
+          <br>
+         <!-- <input type="button" onclick="convert()" name="number" >
+          <div id="button" onclick="convert()">
+            Convert!
+          </div> -->
+          <br>
+          <input class="button-primary" type="button" value="Convert" onclick="convert()">
+          <br>
+          <input type="text" id="converted" name="converted" readonly >
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
